@@ -33,6 +33,8 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     } else {
         $message = "Error: " . $sql . "<br>" . $conn->error;
     }
+
+    
     $conn->close();
 }
 ?>
@@ -81,6 +83,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             font-weight: bold;
             color: #00796b;
         }
+
         input[type="text"],
         input[type="email"],
         textarea {
@@ -111,7 +114,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         input[type="submit"]:hover {
             background-color: #004d40; 
         }
-        </style>
+    </style>
 </head>
 <body>
     <div class="container">
